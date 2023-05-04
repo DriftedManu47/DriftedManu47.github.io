@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiki Series</title>
+    <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -16,73 +17,62 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#top">Top 10</a></li>
-                <li><a href="#categorias">Categorias</a></li>
-                <li><a href="#nosotros">Nosotos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="pages/inicio-sesion.html">Inicio Sesion</a></li>
-                <li><a href="pages/registrarse.html">Regsitrarse</a></li>
-            </ul>
-        </nav>
-        <img class="logo" src="https://codegeex.cn" alt="logo">
+        
+        <img class="logo" src="img/netflix.jpg" alt="logo">
         <h1>Wiki Series</h1>
     </header>
     <main>
-        
-        <section class="top">
-            <div class="container">
-                <div class="serie" data-categoria="terror">
-                    <span title="titulo">Nombre de la Serie</span>
-                    <img src="https://codegeex.cn" alt="imagen">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/series.html">Series</a></li>
+                <li><a href="pages/inicio-sesion.html">Iniciar Sesion | Registrarse</a></li>
+            </ul>
+            
+        </nav>
+        <section class="destacadas">
+            <h2>Destacadas</h2>
+            <div class="destacadas-container">
+                <div class="serie-destacada" data-categoria="terror">
+                    <h4>Nombre de la Serie</h4>
+                    <img src="img/netflix.jpg" alt="imagen">
                     <div class="clasificacion">
                         <li>terror</li>
                         <li>comedia</li>
 
                     </div>
-                    <div class="sinopsis">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At architecto, nulla nihil quae dolorem, amet, nemo iure dignissimos blanditiis beatae exercitationem deleniti? Cum voluptatem ratione itaque quisquam incidunt et ab!</p>
-                    </div>
+                   
                     <button class="ver-mas">Ver más</button>
                 </div>
-                <div class="serie" data-categoria="terror">
-                    <span title="titulo">Nombre de la Serie</span>
-                    <img src="https://codegeex.cn" alt="imagen">
+                <div class="serie-destacada" data-categoria="terror">
+                    <h4>Nombre de la Serie</h4>
+                    <img src="img/netflix.jpg" alt="imagen">
                     <div class="clasificacion">
                         <li>terror</li>
                         <li>comedia</li>
 
                     </div>
-                    <div class="sinopsis">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At architecto, nulla nihil quae dolorem, amet, nemo iure dignissimos blanditiis beatae exercitationem deleniti? Cum voluptatem ratione itaque quisquam incidunt et ab!</p>
-                    </div>
+                    
                     <button class="ver-mas">Ver más</button>
                 </div>
-                <div class="serie" data-categoria="terror">
-                    <span title="titulo">Nombre de la Serie</span>
-                    <img src="https://codegeex.cn" alt="imagen">
+                <div class="serie-destacada" data-categoria="terror">
+                    <h4>Nombre de la Serie</h4>
+                    <img src="img/netflix.jpg" alt="imagen">
                     <div class="clasificacion">
                         <li>terror</li>
                         <li>comedia</li>
 
                     </div>
-                    <div class="sinopsis">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At architecto, nulla nihil quae dolorem, amet, nemo iure dignissimos blanditiis beatae exercitationem deleniti? Cum voluptatem ratione itaque quisquam incidunt et ab!</p>
-                    </div>
+                  
                     <button class="ver-mas">Ver más</button>
                 </div>
-                <div class="serie" data-categoria="terror">
-                    <span title="titulo">Nombre de la Serie</span>
-                    <img src="https://codegeex.cn" alt="imagen">
+                <div class="serie-destacada" data-categoria="terror">
+                    <h4>Nombre de la Serie</h4>
+                    <img src="img/netflix.jpg" alt="imagen">
                     <div class="clasificacion">
                         <li>terror</li>
                         <li>comedia</li>
 
-                    </div>
-                    <div class="sinopsis">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At architecto, nulla nihil quae dolorem, amet, nemo iure dignissimos blanditiis beatae exercitationem deleniti? Cum voluptatem ratione itaque quisquam incidunt et ab!</p>
                     </div>
                     <button class="ver-mas">Ver más</button>
                 </div>
@@ -90,74 +80,18 @@
 
         </section>
 
-        <div class="categorias" id="categorias">
-            <h2>Categorias</h2>
         
-            <ul class="selector-categorias">
-                <a href="terror">Terror</a>
-                <a href="comedia">Comeida</a>
-                <a href="romantica">Romantica</a>
-                <a href="ficicon">Ficcion</a>
-                <a href="accion">Accion</a>
-                <a href="aventura">Aventura</a>
-                <a href="suspenso">Suspenso</a>
-            </ul>
-            
-            <div class="series">
-                <h3>Series</h3>
-                <div class="series-container">
-                    <div class="serie" data-categoria="terror">
-                        <span title="titulo">Nombre de la Serie</span>
-                        <img src="https://codegeex.cn" alt="imagen">
-                        <div class="clasificacion">
-                            <li>terror</li>
-                            <li>comedia</li>
-
-                        </div>
-                        <div class="sinopsis">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At architecto, nulla nihil quae dolorem, amet, nemo iure dignissimos blanditiis beatae exercitationem deleniti? Cum voluptatem ratione itaque quisquam incidunt et ab!</p>
-                        </div>
-                        <button class="ver-mas">Ver más</button>
-                    </div>
-                    <div class="serie" data-categoria="terror">
-                        <span title="titulo">Nombre de la Serie</span>
-                        <img src="https://codegeex.cn" alt="imagen">
-                        <div class="clasificacion">
-                            <li>terror</li>
-                            <li>comedia</li>
-
-                        </div>
-                        <div class="sinopsis">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At architecto, nulla nihil quae dolorem, amet, nemo iure dignissimos blanditiis beatae exercitationem deleniti? Cum voluptatem ratione itaque quisquam incidunt et ab!</p>
-                        </div>
-                        <button class="ver-mas">Ver más</button>
-                    </div>
-                    <div class="serie" data-categori="terror">
-                        <span title="titulo">Nombre de la Serie</span>
-                        <img src="https://codegeex.cn" alt="imagen">
-                        <div class="clasificacion">
-                            <li>terror</li>
-                            <li>comedia</li>
-
-                        </div>
-                        <div class="sinopsis">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At architecto, nulla nihil quae dolorem, amet, nemo iure dignissimos blanditiis beatae exercitationem deleniti? Cum voluptatem ratione itaque quisquam incidunt et ab!</p>
-                        </div>
-                        <button class="ver-mas">Ver más</button>
-                    </div>
-                   
-                </div>
-
+        <section class="info">
+            <div class="nosotros" id="nosotros">
+                <h2>Nosotros</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga repellendus, perspiciatis et, officia consectetur repudiandae aliquam qui, quibusdam laboriosam dolorum ea. Vero libero itaque voluptatum cupiditate deleniti a tenetur porro.</p>
             </div>
-        </div>
-        <div class="nosotros" id="nosotros">
-            <h2>Nosotros</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga repellendus, perspiciatis et, officia consectetur repudiandae aliquam qui, quibusdam laboriosam dolorum ea. Vero libero itaque voluptatum cupiditate deleniti a tenetur porro.</p>
-        </div>
-        <div class="contacto" id="contacto">
-            <h2>Contacto</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga repellendus, perspiciatis et, officia consectetur repudiandae aliquam qui, quibusdam laboriosam dolorum ea. Vero libero itaque voluptatum cupiditate deleniti a tenetur porro.</p>
-        </div>
+            <div class="contacto" id="contacto">
+                <h2>Contacto</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga repellendus, perspiciatis et, officia consectetur repudiandae aliquam qui, quibusdam laboriosam dolorum ea. Vero libero itaque voluptatum cupiditate deleniti a tenetur porro.</p>
+            </div>
+        </section>
+        
 
     </main>
     <footer>

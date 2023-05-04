@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-header {
-    background-color: black;
-    color: hwb(0 100% 0%); /* color de texto */
-    font-family: 'Arvo', serif;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ESTILOS GENERAL */
 
 body {
-    color: hsl(0, 0%, 0%); /* color de texto */
-    font-family: 'Arvo', serif;
-  }
-  
+  color: hsl(0, 0%, 0%); /* color de texto */
+  font-family: 'Montserrat', sans-serif;
+}
+header {
+  background-color: black;
+  color: hwb(0 100% 0%); /* color de texto */
+  font-family: 'Arvo', serif;
+}
+.logo{
+  height: 50px;
+}
+
 main{
+  font-family: 'Montserrat', sans-serif;
   /* background-image: url('../img/background.jpg'); */
 }
 /* titulo */
@@ -23,26 +30,152 @@ text-decoration: underline;
 }
 h2   { 	
 text-align: center;
-font-family: 'Abril Fatface', cursive; 
+
 
 }
+
+h4 {
+  
+  text-align: center;
+  font-size: 30px;
+  color: white; /* color de texto */
+
+}
+
+/* estilos nav */
+
+nav {
+  width: 100%; /* ancho del div */
+  height: auto;
+  background-color: black; /* color de fondo */
+  padding: 20px;
+  position: sticky;
+  top: 0; /* posicin del menu */
+
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
 
 
 nav a{
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
+  margin-right: 30px;
 }
-.top {
-  display: flex;
-  flex-wrap: wrap;
+
+
+/* ESTILO INDEX */
+
+
+.destacadas {
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/background.jpg");
+  padding: 20px;
   
 }
-.top .container {
-  width: 80%;
+.destacadas h2{
+  font-size: 40px;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
+.destacadas-container {
+  margin-top: 50px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(0,0,0,0.7);
+ 
+}
+.serie-destacada {
+  display: block;
+  width: 250px;
+  background-color: darkred;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px;
+  margin:  40px;
+}
+.serie-destacada img {
+  max-width: 	90%;
+  height: auto;
+  border: 	2px solid black; 
+  
+}
+.serie-destacada h4 {
+  text-decoration: underline;
+}
+
+.serie-destacada .clasificacion {
+  display: flex;
+  text-align:  center;
+  justify-content: space-around;
+  height: 65px;
+}
+
+.serie-destacada button{
+  font-size: 20px;
+  width: 80%; /* igual al de la etiqueta */
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: solid 1px;
+  border-radius: 10px;
+  cursor: pointer;
+} 
+  
+  
+.info {
+  display: flex;
+  justify-content: center; 	
+  align-items: center; 	
+  padding:  20px; 
+  color: white; 
+}
+.nosotros {
+  padding:  40px;
+  margin: 20px;
+  background-color: rgba(0,0,0, 0.7);
+  text-align: justify;
+}
+.contacto {
+  padding:  40px;
+  margin: 20px;
+  background-color: rgba(0,0,0, 0.7);
+  text-align: justify;
+  }
+
+
+footer {
+  text-align: center;
+  background-color: rgba(0,0,0, 0.7);
+  padding:  20px;
+  color:  white; 
+}
+
+/* ESTILOS SERIES.HTML */
+
 
 .categorias {
   text-align: center;
+  color: white; 
+  background-color: black;
+  padding: 20px;
+  
 }
 .selector-categorias{
   font-size: 25px;
@@ -53,37 +186,75 @@ nav a{
   text-decoration: none;
   color: black;
   background-color: bisque;
-  border-radius: 10px;
-  border: 5px;
+  border-radius: 5px;
+  border: 2px;
+  padding: 5px;
+  margin-bottom: 40px;
 }
 .series {
-  text-align: center;
-}
-.series-container{
-  background-color: rgba(0,0,0, 0.7);
-  display: flex;
-  width: 80%;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  justify-content: space-between;
-  margin:  30px;
-}
-
-.serie{
-  margin:  40px;
-  display: block;
-  width: 200px;
-  border-radius: 10px;
-  border: 1px;
-  border-color: brown;
+  background-image: url("../img/background.jpg");
+  padding: 20px;
+  
   
 }
-.categorias .serie{
-  color : white;
+.series h2{
+  font-size: 40px;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
+.series-container {
+  margin-top: 50px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px; 
+  background-color:rgba(0,0,0,0.7);
+  padding: 20px;
+}
+.serie {
+  display: block;
+  width: 250px;
+  background-color: darkred;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px; 
+  margin: 20px;
+  margin-bottom: 20px;
+}
+.serie img {
+  max-width: 	90%;
+  height: auto;
+  border: 	2px solid black; 
+  
+}
+.serie h4 {
+  text-decoration: underline;
+}
+
+.serie .clasificacion {
+  display: flex;
+  text-align:  center;
+  justify-content: space-around;
+  height: 65px;
+}
+
 .serie button{
   font-size: 20px;
-  width: 100%; /* igual al de la etiqueta */
-  background-color: bisque;
-  color: black;
-}
+  width: 80%; /* igual al de la etiqueta */
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: solid 1px;
+  border-radius: 10px;
+  cursor: pointer;
+} 
+
+/* ESTILOS INICIO SESION Y REGISTRARSE */
