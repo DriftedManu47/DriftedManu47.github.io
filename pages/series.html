@@ -12,7 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
 	<link rel="icon" type="image/logo.png" href="https://codegeex.cn" />
-	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="../js/script.js" async></script>
 </head>
 <body>
     <header>
@@ -28,69 +29,70 @@
                 <li><a href="inicio-sesion.html">Iniciar Sesion | Registrarse</a></li>
             </ul>
         </nav>
-        <div class="categorias" id="categorias">
+        <div class="categorias">
             <h2>Categorias</h2>
         
-            <ul class="selector-categorias">
-                <a href="terror">Terror</a>
-                <a href="comedia">Comeida</a>
-                <a href="romantica">Romantica</a>
-                <a href="ficicon">Ficcion</a>
-                <a href="accion">Accion</a>
-                <a href="aventura">Aventura</a>
-                <a href="suspenso">Suspenso</a>
-            </ul>
-            
-            <div class="series">
-                <h2>Series</h2>
-                <div class="series-container">
-                    <div class="serie" data-categoria="terror">
-                        <h4>Nombre de la Serie</h4>
-                        <img src="../img/netflix.jpg" alt="imagen">
-                        <div class="clasificacion">
-                            <li>terror</li>
-                            <li>comedia</li>
-    
-                        </div>
-                       
-                        <button class="ver-mas">Ver más</button>
-                    </div>
-                    <div class="serie" data-categoria="terror">
-                        <h4>Nombre de la Serie</h4>
-                        <img src="../img/netflix.jpg" alt="imagen">
-                        <div class="clasificacion">
-                            <li>terror</li>
-                            <li>comedia</li>
-    
-                        </div>
-                        
-                        <button class="ver-mas">Ver más</button>
-                    </div>
-                    <div class="serie" data-categoria="terror">
-                        <h4>Nombre de la Serie</h4>
-                        <img src="../img/netflix.jpg" alt="imagen">
-                        <div class="clasificacion">
-                            <li>terror</li>
-                            <li>comedia</li>
-    
-                        </div>
-                      
-                        <button class="ver-mas">Ver más</button>
-                    </div>
-                    <div class="serie" data-categoria="terror">
-                        <h4>Nombre de la Serie</h4>
-                        <img src="../img/netflix.jpg" alt="imagen">
-                        <div class="clasificacion">
-                            <li>terror</li>
-                            <li>comedia</li>
-    
-                        </div>
-                        <button class="ver-mas">Ver más</button>
-                    </div>
-                </div>
-
+            <div class="selector-categorias">
+                <a class="categoria"  data-subcategoria="terror">Terror</a>
+                <a class="categoria"  data-subcategoria="policial">Policial</a>
+                <a class="categoria"  data-subcategoria="comedia">Comeida</a>
+                <a class="categoria"  data-subcategoria="romantica">Romantica</a>
+                <a class="categoria"  data-subcategoria="ficcion">Ficcion</a>
+                <a class="categoria"  data-subcategoria="accion">Accion</a>
+                <a class="categoria"  data-subcategoria="aventura">Aventura</a>
+                <a class="categoria"  data-subcategoria="suspenso">Suspenso</a>
             </div>
+        </div>    
+        <div class="series">
+            <h2>Series</h2>
+            <div class="series-container">
+                <div class="serie" data-categoria="terror">
+                    <h4>Nombre de la Serie</h4>
+                    <img src="../img/netflix.jpg" alt="imagen">
+                    <div class="clasificacion">
+                        <li>terror</li>
+                        <li>comedia</li>
+
+                    </div>
+                    
+                    <button class="ver-mas">Ver más</button>
+                </div>
+                <div class="serie" data-categoria="policial accion">
+                    <h4>Nombre de la Serie</h4>
+                    <img src="../img/netflix.jpg" alt="imagen">
+                    <div class="clasificacion">
+                        <li>policial</li>
+                        <li>accion</li>
+
+                    </div>
+                    
+                    <button class="ver-mas">Ver más</button>
+                </div>
+                <div class="serie" data-categoria="comedia ficcion">
+                    <h4>Nombre de la Serie</h4>
+                    <img src="../img/netflix.jpg" alt="imagen">
+                    <div class="clasificacion">
+                        <li>ficcion</li>
+                        <li>comedia</li>
+
+                    </div>
+                    
+                    <button class="ver-mas">Ver más</button>
+                </div>
+                <div class="serie" data-categoria="suspenso">
+                    <h4>Nombre de la Serie</h4>
+                    <img src="../img/netflix.jpg" alt="imagen">
+                    <div class="clasificacion">
+                        <li>suspenso</li>
+                        
+
+                    </div>
+                    <button class="ver-mas">Ver más</button>
+                </div>
+            </div>
+
         </div>
+        
     </main>
 </body>
 </html>

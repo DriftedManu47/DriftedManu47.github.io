@@ -4,21 +4,31 @@
 /* ESTILOS GENERAL */
 
 body {
-  color: hsl(0, 0%, 0%); /* color de texto */
-  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  color: hsl(0, 0%, 100%); /* color de texto */
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;/* color*/
 }
+
 header {
   background-color: black;
   color: hwb(0 100% 0%); /* color de texto */
   font-family: 'Arvo', serif;
+  height: 250px;
 }
-.logo{
+header img{
   height: 50px;
+  align-items: center;
+  justify-content: center;
 }
 
 main{
   font-family: 'Montserrat', sans-serif;
   /* background-image: url('../img/background.jpg'); */
+}
+
+li {
+  list-style:none;
 }
 /* titulo */
 h1 { 
@@ -62,14 +72,11 @@ nav ul {
 }
 
 
-
-
-
-
 nav a{
   color: rgb(255, 255, 255);
   text-decoration: none;
   margin-right: 30px;
+  font-size: 25px;
 }
 
 
@@ -81,6 +88,7 @@ nav a{
   align-items: center;
   background-image: url("../img/background.jpg");
   padding: 20px;
+  
   
 }
 .destacadas h2{
@@ -102,12 +110,15 @@ nav a{
 }
 .serie-destacada {
   display: block;
+  padding: 20px;
   width: 250px;
   background-color: darkred;
   text-align: center;
-  border-radius: 10px;
-  border: 1px;
-  margin:  40px;
+  border-radius: 15px;
+  border: 3px; 
+  border-color: white;
+  margin: 20px;
+  margin-bottom: 20px;
 }
 .serie-destacada img {
   max-width: 	90%;
@@ -121,6 +132,8 @@ nav a{
 
 .serie-destacada .clasificacion {
   display: flex;
+  color:  white;
+  font-size: 20px;
   text-align:  center;
   justify-content: space-around;
   height: 65px;
@@ -182,15 +195,21 @@ footer {
   
 }
 .selector-categorias a{
+  cursor: pointer;
   margin: 10px;
   text-decoration: none;
-  color: black;
-  background-color: bisque;
+  color: rgb(255, 255, 255);
+  background-color: transparent ;
   border-radius: 5px;
-  border: 2px;
+  border: 2px solid white ;
   padding: 5px;
   margin-bottom: 40px;
 }
+.categoria.seleccionada {
+  background-color: darkred;
+}
+
+
 .series {
   justify-content: center;
   align-items: center;
@@ -202,7 +221,6 @@ footer {
 .series h2{
   font-size: 40px;
   justify-content: center;
-  text-align: center;
   color: white;
 }
 .series-container {
@@ -211,7 +229,7 @@ footer {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-radius: 10px;
   border: 1px; 
@@ -220,11 +238,13 @@ footer {
 }
 .serie {
   display: block;
+  padding: 20px;
   width: 250px;
   background-color: darkred;
   text-align: center;
-  border-radius: 10px;
-  border: 1px; 
+  border-radius: 15px;
+  border: 3px; 
+  border-color: white;
   margin: 20px;
   margin-bottom: 20px;
 }
@@ -240,6 +260,8 @@ footer {
 
 .serie .clasificacion {
   display: flex;
+  color:  white;
+  font-size: 20px;
   text-align:  center;
   justify-content: space-around;
   height: 65px;
